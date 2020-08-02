@@ -1,38 +1,51 @@
+body {
+  background-color: rgb(167, 228, 243);
+  background-image: url(./bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .App {
+  background-color: rgb(75, 207, 240);
+  min-height: 650px;
+  width: 500px;
+  margin: 40px auto;
+  border-radius: 10px;
+  border-color: aliceblue;
+}
+.App .heading {
   text-align: center;
+  font-family: "Kreon", serif;
+  font-weight: bolder;
+  font-size: 30px;
+  padding-top: 40px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#to-do input {
+  background-color: rgb(167, 228, 243);
+  border: 0px;
+  width: 280px;
+  height: 50px;
+  padding: 0 20px;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #070707;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#to-do input::placeholder {
+  font-family: "Kreon", serif;
+  color: #0fcbec;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#to-do button {
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+  border: 0;
+  background-color: aliceblue;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Kreon", serif;
+  font-size: 20px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#to-do input:focus,
+#to-do button:focus {
+  outline: none;
 }
